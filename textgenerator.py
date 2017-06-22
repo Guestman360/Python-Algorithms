@@ -1,0 +1,35 @@
+import random, string
+
+vowels = 'aeiouy'
+consonants = 'bcdfghjklmnpqrstvwxz'
+letters = string.ascii_lowercase
+
+letter_input_1 = input("What letters do you want? Enter 'v' for vowels, 'c' for consonants or 'l' for any letter: ")
+letter_input_2 = input("What letters do you want? Enter 'v' for vowels, 'c' for consonants or 'l' for any letter: ")
+letter_input_3 = input("What letters do you want? Enter 'v' for vowels, 'c' for consonants or 'l' for any letter: ")
+
+def generator():
+    if letter_input_1 == 'v':
+        letter1 = random.choice(vowels)
+    elif letter_input_2 == 'c':
+        letter1 = random.choice(consonants)
+    elif letter_input_3 == 'l':
+        letter1 = random.choice(letters)
+    if letter_input_1 == 'v':
+        letter2 = random.choice(vowels)
+    elif letter_input_2 == 'c':
+        letter2 = random.choice(consonants)
+    elif letter_input_3 == 'l':
+        letter2 = random.choice(letters)
+    if letter_input_1 == 'v':
+        letter3 = random.choice(vowels)
+    elif letter_input_2 == 'c':
+        letter3 = random.choice(consonants)
+    elif letter_input_3 == 'l':
+        letter3 = random.choice(letters)
+    name = letter1+letter2+letter3
+    return(name)
+
+
+for i in range(20):
+    print(generator())
