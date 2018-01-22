@@ -2,6 +2,7 @@
 import random
 import collections
 
+
 def finder(arr):
     random.shuffle(arr)
 

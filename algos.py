@@ -1,6 +1,26 @@
 import sys
 #from pythonds.basic.stack import Stack
 
+def namePinCheck(name, pin):
+	n = input("Input name: ")
+	p = input("Input pin number: ")
+
+	if n == name and p == pin:
+		print("Correct Name and Pin!")
+	else:
+		print("Wrong Name and Pin")
+
+namePinCheck("Matt",1234)
+
+
+def tempRange(x):
+	if x <= 72 and x >= 50:
+		print("It's Alright!!!")
+	else:
+		print("Not So Good...")
+
+tempRange(54)
+
 #Algo for search engine company - can use set or dictionary
 def twoSum(lst,target):
 
